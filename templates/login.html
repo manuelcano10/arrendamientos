@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<br>
+<br>
+<form class="container">
+    <div class="form-group">
+      <label for="valid-feedback">Name and Surname</label>
+      <input type="text" class="form-control" name="nameandsurname" required>
+    </div>
+    <div class="form-group">
+      <label for="valid-feedback">Email</label>
+      <input type="text" class="form-control" name="email" required>
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-success form-group col-md-2">Submit</button>
+  </form>
+{% endblock %}

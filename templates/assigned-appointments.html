@@ -1,0 +1,39 @@
+{% extends "layout.html"%}
+{% block content%}
+<br>
+<div class="container">
+    <form action="/addquote" method="POST">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="valid-feedback">Title</label>
+            <input type="text" class="form-control" name="title" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="valid-feedback">Type</label>
+            <input type="text" class="form-control" name="tipe" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-group col-md-6"></div>
+          <label for="valid-feedback">Address</label>
+          <input type="text" class="form-control" name="address" required>
+        </div>
+        <div class="form-group">
+          <label for="valid-feedback">Rooms</label>
+          <input type="text" class="form-control" name="rooms" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="valid-feedback">Price</label>
+            <input type="text" class="form-control" name="price" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="valid-feedback">Area</label>
+            <input type="text" class="form-control" name="area" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success form-group col-md-2">Submit</button>
+      </form>
+      
+</div>
+{% endblock %}
